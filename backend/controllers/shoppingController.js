@@ -28,7 +28,23 @@ const createShoppingItem = AsyncHandler(async (req, res) => {
   res.status(200).json(shoppingItem);
 });
 
+//@description Delete a Shift Log
+//@route DELETE /api/shiftlog
+//@access public
+const deleteShoppingitem = AsyncHandler(async (req, res) => {
+  const shoppingItem = await ShoppingModel.findById(req.params.id);
+
+  if (!shoppingItem) {
+    res.status(404);
+    throw new Error("Shift not found");
+  }
+
+  await ShoppingModel.deleteOne({ _id: req.params.id });
+  res.status(200).json(shoppingItem);
+});
+
 module.exports = {
   getAllShoppingItems,
   createShoppingItem,
+  deleteShoppingitem,
 };
