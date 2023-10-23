@@ -7,7 +7,7 @@ function ListView() {
   const [item_name, setName] = useState("");
 
   useEffect(() => {
-    fetch("/api/shopping")
+    fetch("https://shopping-backend-zbyh.onrender.com/api/shopping")
       .then((response) => response.json())
       .then((data) => setListData(data));
   }, []);
@@ -15,7 +15,7 @@ function ListView() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("/api/shopping", {
+    fetch("https://shopping-backend-zbyh.onrender.com/api/shopping", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,12 +36,15 @@ function ListView() {
   };
 
   const deleteItem = (event) => {
-    fetch(`/api/shopping/${event.target.id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    fetch(
+      `https://shopping-backend-zbyh.onrender.com/api/shopping/${event.target.id}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((res) => {
         if (res.status === 200) {
           console.log("Item Delete");
