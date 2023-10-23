@@ -6,6 +6,7 @@ function ListView() {
   const [listData, setListData] = useState([{}]);
   const [item_name, setName] = useState("");
 
+  //https://shopping-backend-zbyh.onrender.com
   useEffect(() => {
     fetch("https://shopping-backend-zbyh.onrender.com/api/shopping")
       .then((response) => response.json())

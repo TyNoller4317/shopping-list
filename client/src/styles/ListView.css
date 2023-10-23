@@ -12,7 +12,7 @@
 
 .listview-form input {
     width: 100%;
-    height: 35px;
+    height: 40px;
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-left: 25px;
@@ -34,16 +34,22 @@
 }
 
 .listview {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .listview-item{
+    width: 80%;
     padding: 0 25px;
-    height: 35px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #b1b1b1;
+    background-color: white;
+    margin: 10px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
 }
 
 .listview-item button {
