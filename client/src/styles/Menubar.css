@@ -5,6 +5,9 @@
     color: white;
     font-size: 20px;
     display: flex;
-    align-items: center;
-    padding-left: 25px;
+    align-items: center;    
+}
+
+.menu-container h2 {
+    margin-left: 25px;
 }

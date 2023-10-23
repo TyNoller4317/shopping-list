@@ -5,7 +5,9 @@ function MenuBar() {
   return (
     <>
       <div className="menu-container">
-        <div className="menu-logo">Shopping List</div>
+        <div className="menu-logo">
+          <h2>Shopping List</h2>
+        </div>
       </div>
     </>
   );
