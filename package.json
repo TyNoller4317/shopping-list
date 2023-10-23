@@ -1,7 +1,7 @@
 {
   "name": "shopping-list",
   "version": "1.0.0",
-  "description": "shopping list for myself",
+  "description": "shopping list for myself, work",
   "main": "index.js",
   "scripts": {
     "install-server": "cd backend && npm install",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/TyNoller4317/shopping-list.git"
   },
-  "author": "",
+  "author": "tyler",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TyNoller4317/shopping-list/issues"

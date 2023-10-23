@@ -5,6 +5,7 @@ const {
   deleteShoppingitem,
 } = require("../controllers/shoppingController");
 const router = express.Router();
+const test = "";
 
 router.get("/", getAllShoppingItems);
 
