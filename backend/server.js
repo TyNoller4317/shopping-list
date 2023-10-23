@@ -5,7 +5,7 @@ const dotenv = require("dotenv").config();
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "https://shiftlog-frontend.onrender.com",
+  origin: "https://shopping-client-0i2z.onrender.com",
 };
 
 connectDB();
